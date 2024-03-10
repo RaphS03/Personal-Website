@@ -119,12 +119,37 @@ nav ul li a {
   padding: 50px 0;
 }
 
-.contact-content {
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  max-width: 550px;
+#contact h2 {
+  color: #ffffff;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+#contact span {
+  color: #ffffff;
+  font-size: 8px;
+  margin-bottom: 0px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item {
   text-align: center;
-  margin: 20px;
+}
+
+.contact-item i {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.button.black-button i.fa-arrow-right {
+  font-size: 1.25em;
+  margin-right: 0.5em;
 }
 
 h1 {
