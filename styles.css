@@ -111,8 +111,34 @@ nav ul li a {
   margin: 20px;
 }
 
-#contact {
+#projects {
+  background-color: #ffffff;
+  padding: 30px 0;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between; /* Positions the title to the left and details to the right */
+  align-items: center; /* Aligns items vertically */
+  text-align: center;
+  width: 80%;
+}
+
+.project-separator {
+  max-width: 65%;
+  margin: 20px auto;
+}
+
+#activities {
+  background-color: #000000;
+}
+
+#skills {
   background-color: #1c1c22;
+}
+
+#contact {
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
