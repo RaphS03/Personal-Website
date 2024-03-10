@@ -1,27 +1,114 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section,
+footer {
+  padding: 20px;
+  text-align: center;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background-color: #000;
+  color: #fff;
 }
 
-main {
-    padding: 20px;
+.header-content {
+  text-align: right;
 }
 
-section {
-    margin-bottom: 20px;
+.image-content img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: brightness(130%);
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0px 3px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0px 0px;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8px;
+  font-weight: 500;
+}
+
+.button i {
+  margin-left: 5px;
+}
+
+.black-button {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.white-button {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  background: linear-gradient(to right, blue, purple, orange, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Krona One", sans-serif;
+  font-size: 36px;
+  margin: 0;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: "Krona One", sans-serif;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 100;
+}
+
+.krona-one-regular {
+  font-family: "Krona One", sans-serif;
+  font-style: normal;
+}
+
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }

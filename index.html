@@ -3,34 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
+    <title>Raph's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/43f306ee29.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <h1>About Me</h1>
+      <div class="text-content">
+        <h1>Hello, I’m Raph!</h1>
+        <h2>I’m a software developer</h2>
+        <h2>& computer scientist</h2>
+        <h2>based in Melbourne.</h2>
+        <nav>
+          <ul>
+            <li>
+              <a href="#contact" class="button black-button">
+                GET IN TOUCH
+                <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+              </a>
+            </li>
+            <li>
+              <a href="resume.pdf" target="_blank" class="button white-button">
+                VIEW RESUME
+                <i
+                  class="fa-solid fa-file-arrow-down fa-lg"
+                  style="color: #000000"
+                ></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="image-content">
+        <img src="face_photo.jpg" alt="Raph's photo" />
+      </div>
     </header>
-    <main>
-      <section id="about">
-        <h2>About</h2>
-        <p>This is some information about me.</p>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: example@example.com</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2024 Myself</p>
-    </footer>
+
+    <section id="about">
+      <h2>A bit about me...</h2>
+      <p>
+        Now in my third year of a Software Engineering and Computer Science
+        double degree at Monash University, I've broadened my knowledge. My
+        interests include solution architecture, AI, and machine learning.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h1>Projects & Courses</h1>
+      <!-- Add project details here -->
+    </section>
+
+    <section id="activities">
+      <h1>Activities & Leadership</h1>
+      <!-- Add activities here -->
+    </section>
+
+    <section id="skills">
+      <h1>What I do...</h1>
+      <!-- Add activities here -->
+    </section>
+
+    <section id="contact">
+      <p>Email: raphael.schwalb@gmail.com</p>
+      <p>Mobile: +61-435-043-211</p>
+      <a href="https://linkedin.com">VISIT LINKEDIN</a>
+      <a href="https://github.com">VISIT GITHUB</a>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
