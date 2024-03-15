@@ -3,167 +3,228 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raph's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <script
-      src="https://kit.fontawesome.com/43f306ee29.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Raph's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,100&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="text-content">
-        <h1>Hello, I’m Raph!</h1>
-        <h2>I’m a software developer</h2>
-        <h2>& computer scientist</h2>
-        <h2>based in Melbourne.</h2>
-        <nav>
-          <ul>
-            <li>
-              <a href="#contact" class="button black-button">
-                GET IN TOUCH
-                <i class="fa-solid fa-phone" style="color: #ffffff"></i>
-              </a>
-            </li>
-            <li>
-              <a href="resume.pdf" target="_blank" class="button white-button">
-                VIEW RESUME
-                <i
-                  class="fa-solid fa-file-arrow-down fa-lg"
-                  style="color: #000000"
-                ></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="image-content">
-        <img src="face_photo.jpg" alt="Raph's photo" />
-      </div>
-    </header>
-
-    <section id="about">
-      <div class="about-content">
-        <h2>A bit about me...</h2>
-        <p>
-          Now in my third year of a Software Engineering and Computer Science
-          double degree at Monash University, I've broadened my knowledge,
-          skills, and portfolio. I aim to further my development by
-          collaborating on real-world problems and enhancing my technical and
-          interpersonal skills. My interests include solution architecture, AI,
-          and machine learning.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h1>Projects & Courses</h1>
-      <hr class="project-separator" />
-      <div class="project">
-        <h2 class="project-title">Project 1 <span class="toggle">+</span></h2>
-        <div class="project-details">
-          <p>Project 1 details...</p>
+    <div class="intro">
+      <div class="column">
+        <div class="heading">Hello, I'm Raph!</div>
+        <div class="subHeading">
+          <div>I'm a software developer</div>
+          <div>&amp; computer scientist</div>
+          <div>based in Melbourne.</div>
+        </div>
+        <div class="row">
+          <button onclick="location.href='#contact'" class="ovalButton">
+            GET IN TOUCH
+            <img src="phone.svg">
+          </button>
+          <button class="ovalButton inverted">
+            VIEW RESUME
+            <img src="arrow-down.svg">
+          </button>
         </div>
       </div>
-      <hr class="project-separator" />
-      <div class="project">
-        <h2 class="project-title">Project 2 <span class="toggle">+</span></h2>
-        <div class="project-details">
-          <p>Project 2 details...</p>
+      <img src="photo.jpg">
+    </div>
+    <div class="about">
+      <div class="subHeading">A bit about me...</div>
+      <div>Now in my third year of a Software Engineering and Computer Science</div>
+      <div>double degree at Monash University, I've broadened my knowledge,</div>
+      <div>skills, and portfolio. I aim to further my development by collaborating on</div>
+      <div>real-world problems and enhancing my technical and interpersonal skills.</div>
+      <div>My interests include solution architecture, AI, and machine learning.</div>
+    </div>
+    <div class="projects">
+      <div class="heading">Projects &amp; Courses</div>
+      <div class="column">
+        <div>
+          <div class="row">
+            <div class="subHeading inverted">
+              Stock Predictor
+            </div>
+            <button class="light toggleButton">
+              <span class="toggled">+</span>
+              <span class="toggled hidden">&ndash;</span>
+            </button>
+          </div>
+          <div class="toggled hidden">
+            <div class="badge">
+              <div>January 2024</div>
+            </div>
+            <ul class="light">
+              <li>
+                Developed a Neural Network to predict future values of stocks.
+              </li>
+              <li>
+                Learned Jupyter, Sci-kit, Pandas, and other tools, while following my interests in machine learning.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="subHeading inverted">
+              Backend Blockchain Development
+            </div>
+            <button class="light toggleButton">
+              <span class="toggled">+</span>
+              <span class="toggled hidden">&ndash;</span>
+            </button>
+          </div>
+          <div class="toggled hidden">
+            <div class="badge">
+              <div>November-December 2023</div>
+            </div>
+            <ul class="light">
+              <li>
+                Designing and coding Cryptocurrencies, NFTs, and Smart Contracts for a business.
+              </li>
+              <li>
+                The project was handed to a professional team, but I gained skills in thinking analytically, and cultivating the habit of continuous and independent learning.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="subHeading inverted">
+              Agile Project Management Website
+            </div>
+            <button class="light toggleButton">
+              <span class="toggled">+</span>
+              <span class="toggled hidden">&ndash;</span>
+            </button>
+          </div>
+          <div class="toggled hidden">
+            <div class="badge">
+              <div>July-November 2023</div>
+            </div>
+            <ul class="light">
+              <li>
+                Developed a full-stack project management website for teams following Agile principles.
+              </li>
+              <li>
+                As a team, we followed the scrum methodology, where I learned the processes of software team projects.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="subHeading inverted">
+              AI Course with PyImageSearch
+            </div>
+            <button class="light toggleButton">
+              <span class="toggled">+</span>
+              <span class="toggled hidden">&ndash;</span>
+            </button>
+          </div>
+          <div class="toggled hidden">
+            <div class="badge">
+              <div>November 2022 - February 2023</div>
+            </div>
+            <ul class="light">
+              <li>
+                Completed 5 short courses in a variety of areas within AI with certification.
+              </li>
+              <li>
+                Topic included Neural Networks and Parameterized learning, Optimization Methods and Regularization, Convolutional Neural Networks.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="subHeading inverted">
+              Student Engineering Programs at Monash Univerity & RMIT
+            </div>
+            <button class="light toggleButton">
+              <span class="toggled">+</span>
+              <span class="toggled hidden">&ndash;</span>
+            </button>
+          </div>
+          <div class="toggled hidden">
+            <div class="badge">
+              <div>January 2018</div>
+            </div>
+            <ul class="light">
+              <li>
+                Completed 2 short multiday programs that introduce students to engineering.
+              </li>
+              <li>
+                Developed my skills and love for problem-solving at an early age.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <hr class="project-separator" />
-      <div class="project">
-        <h2 class="project-title">Project 3 <span class="toggle">+</span></h2>
-        <div class="project-details">
-          <p>Project 3 details...</p>
+    </div>
+    <div class="skills">
+      <div>
+        <div class="heading">What I do...</div>
+        <div class="column">
+          <div>
+            <div class="row">
+              <div> 
+                <div>Languages</div>
+                <div>...</div>
+                <div>...</div>
+              </div>
+              <div>
+                icons
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row">
+              <div>
+                icons
+              </div>
+              <div> 
+                <div>Tools</div>
+                <div>...</div>
+                <div>...</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <hr class="project-separator" />
-      <div class="project">
-        <h2 class="project-title">Project 4 <span class="toggle">+</span></h2>
-        <div class="project-details">
-          <p>Project 4 details...</p>
+    </div>
+    <div class="contact" id="contact">
+      <div class="row">
+        <div class="column">
+          <img src="mail.svg">
+          <div>Email</div>
+          <div class="detail">raphael.schwalb@gmail.com</div>
+        </div>
+        <div class="column">
+          <img src="phoneContact.svg">
+          <div>Mobile</div>
+          <div class="detail">+61-435-043-211</div>
+        </div>
+        <div class="column">
+          <img src="linkedIn.svg">
+          <div>Let's Connect</div>
+          <button class="ovalButton">
+            VISIT LINKEDIN
+            <img src="arrow-right.svg">
+          </button>
+        </div>
+        <div class="column">
+          <img src="github.svg">
+          <div>Github</div>
+          <button class="ovalButton">
+            VISIT GITHUB
+            <img src="arrow-right.svg">
+          </button>
         </div>
       </div>
-      <hr class="project-separator" />
-      <div class="project">
-        <h2 class="project-title">Project 5 <span class="toggle">+</span></h2>
-        <div class="project-details">
-          <p>Project 5 details...</p>
-        </div>
-      </div>
-      <hr class="project-separator" />
-    </section>
-
-    <section id="activities">
-      <h1>Activities & Leadership</h1>
-      <!-- Add activities here -->
-    </section>
-
-    <section id="skills">
-      <h1>What I do...</h1>
-      <!-- Add activities here -->
-    </section>
-
-    <section id="contact">
-      <div class="contact-container">
-        <div class="contact-item">
-          <i class="fa-solid fa-envelope" style="color: #ffffff"></i></i>
-          <h2>Email</h2>
-          <h2><small>raphael.schwalb@gmail.com</small></h2>
-        </div>
-        <div class="contact-item">
-          <i class="fa-solid fa-phone" style="color: #ffffff"></i></i>
-          <h2>Mobile</h2>
-          <h2><small>+61-435-043-211</small></h2>
-        </div>
-        <div class="contact-item">
-          <i class="fa-brands fa-linkedin" style="color: #ffffff"></i></i>
-          <h2>
-            Let's Connect!
-          </h2>
-          <a
-            href="https://www.linkedin.com/in/raphaelschwalb/"
-            target="_blank"
-            class="button black-button"
-          >
-            <span>VISIT LINKEDIN</span>
-            <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
-          </a>
-        </div>
-        <div class="contact-item">
-          <i class="fa-brands fa-github" style="color: #ffffff"></i></i>
-          <h2>
-            Github
-          </h2>
-          <a
-            href="https://github.com/RaphS03"
-            target="_blank"
-            class="button black-button"
-          >
-            <span>VISIT GITHUB</span>
-            <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <script src="script.js"></script>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

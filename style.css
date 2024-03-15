@@ -1,0 +1,223 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.intro {
+  background: #0c1215;
+}
+
+.heading {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    89.99deg,
+    #4200ff 0.01%,
+    #fd5b15 46.65%,
+    #ffd600 79.91%
+  );
+  background-clip: text;
+  font-family: "Krona One", sans-serif;
+  font-size: 64px;
+}
+
+.subHeading {
+  color: #fff;
+  font-size: 48px;
+  font-family: "Krona One", sans-serif;
+}
+
+.subHeading.inverted {
+  color: #000;
+}
+
+.light {
+  font-family: 'Helvetica Light';
+}
+
+.hidden {
+  display: none;
+}
+
+.intro {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 200px 150px;
+}
+
+.intro > img {
+  border-radius: 50%;
+  height: 326px;
+  object-fit: cover;
+  width: 326px;
+}
+
+.intro > .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro > .column > .row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ovalButton {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 100px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: inherit;
+  padding: 20px 24px;
+}
+
+.ovalButton.inverted {
+  background: #fff;
+  color: #000;
+}
+
+.about {
+  background: #1C1C22;
+  font-family: 'Railway', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding: 96px 0;
+}
+
+.about > .subHeading {
+  margin-bottom: 10px;
+}
+
+.projects {
+  margin: 0 auto;
+  width: calc(100% - 250px);
+}
+
+.projects > .heading {
+  margin: 60px 0;
+  text-align: right;
+  width: 100%;
+}
+
+.projects > .column > div {
+  border-bottom: 1px solid #000;
+  padding: 50px 5px;
+}
+
+.projects > .column > div > .row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects > .column > div:first-of-type {
+  border-top: 1px solid #000;
+}
+
+.projects > .column > div:last-of-type {
+  margin-bottom: 96px;
+}
+
+.projects > .column > div > .row > button {
+  background: transparent;
+  border: 0;
+  font-size: 60px;
+  font-weight: lighter;
+}
+
+.projects > .column > div > .toggled > .badge {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.projects > .column > div > .toggled > .badge > div {
+  background: #f3f4f6;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 30px;
+  border-radius: 100px;
+  padding: 2px 12px;
+}
+
+.projects > .column > div > .toggled > ul {
+  padding-inline-start: 0;
+  list-style-position: inside;
+  font-family: 'Railway', sans-serif;
+}
+
+.skills {
+  background: #1C1C22;
+}
+
+.skills > div > .heading {
+  text-align: center;
+}
+
+.skills > div{
+  margin: 0 auto;
+  width: calc(100% - 250px);
+  text-align: center;
+}
+
+.skills > div > .column > div {
+  border-bottom: 1px solid #fff;
+  padding: 50px 5px;
+}
+
+.skills > div > .column > div:first-of-type {
+  border-top: 1px solid #fff;
+}
+
+.skills > div > .column > div > .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  background: #0B1215;
+}
+
+.contact > .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 96px;
+  gap: 100px
+}
+
+.contact > .row > .column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "Krona One", sans-serif;
+  font-size: 16px;
+  gap: 10px;
+}
+
+.contact > .row > .column > .detail{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+}
+
+.contact > .row > .column > img{
+  height: 56px;
+}
+
+.contact > .row > .column > .ovalButton{
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px 16px;
+}
