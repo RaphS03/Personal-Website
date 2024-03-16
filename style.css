@@ -1,13 +1,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 button {
   cursor: pointer;
 }
 
-.intro {
-  background: #0c1215;
+ul {
+  list-style-position: inside;
+  margin: 0;
+  padding-inline-start: 0;
 }
 
 .heading {
@@ -20,14 +23,14 @@ button {
     #ffd600 79.91%
   );
   background-clip: text;
-  font-family: "Krona One", sans-serif;
-  font-size: 64px;
+  font-family: 'Krona One', sans-serif;
+  font-size: calc(3rem + 0.25vw);
 }
 
 .subHeading {
   color: #fff;
-  font-size: 48px;
-  font-family: "Krona One", sans-serif;
+  font-family: 'Krona One', sans-serif;
+  font-size: calc(2rem + 0.25vw);
 }
 
 .subHeading.inverted {
@@ -35,7 +38,7 @@ button {
 }
 
 .light {
-  font-family: 'Helvetica Light';
+  font-weight: 300;
 }
 
 .hidden {
@@ -44,11 +47,18 @@ button {
 
 .intro {
   align-items: center;
+  background: #0c1215;
   display: flex;
   flex-wrap: wrap;
   gap: 50px;
   justify-content: center;
   padding: 200px 150px;
+}
+
+@media only screen and (max-width: 900px) {
+  .intro {
+    padding: 100px;
+  }
 }
 
 .intro > img {
@@ -79,6 +89,7 @@ button {
   color: #fff;
   font-family: inherit;
   padding: 20px 24px;
+  text-decoration: none;
 }
 
 .ovalButton.inverted {
@@ -88,8 +99,8 @@ button {
 
 .about {
   background: #1C1C22;
-  font-family: 'Railway', sans-serif;
   color: #fff;
+  font-size: 25px;
   text-align: center;
   padding: 96px 0;
 }
@@ -98,14 +109,21 @@ button {
   margin-bottom: 10px;
 }
 
+.about > .text {
+  margin: 0 auto;
+  max-width: 800px;
+  text-wrap: wrap;
+  width: calc(100% - 100px);
+}
+
 .projects {
   margin: 0 auto;
-  width: calc(100% - 250px);
+  max-width: 1200px;
+  width: calc(100%-100px);
 }
 
 .projects > .heading {
   margin: 60px 0;
-  text-align: right;
   width: 100%;
 }
 
@@ -116,8 +134,17 @@ button {
 
 .projects > .column > div > .row {
   align-items: center;
+  background: transparent;
+  border: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  overflow-wrap: anywhere;
+  width: 100%;
+}
+
+.projects > .column > div > .row > .subHeading {
+  text-align: left;
 }
 
 .projects > .column > div:first-of-type {
@@ -128,11 +155,8 @@ button {
   margin-bottom: 96px;
 }
 
-.projects > .column > div > .row > button {
-  background: transparent;
-  border: 0;
+.projects > .column > div > .row > .light {
   font-size: 60px;
-  font-weight: lighter;
 }
 
 .projects > .column > div > .toggled > .badge {
@@ -152,37 +176,110 @@ button {
 }
 
 .projects > .column > div > .toggled > ul {
-  padding-inline-start: 0;
-  list-style-position: inside;
   font-family: 'Railway', sans-serif;
+}
+
+.activities {
+  background: #0B1215;
+  padding: 100px 0;
+}
+
+.activities > .heading {
+  text-align: center;
+}
+
+.activities > .cards {
+  display: flex;
+  gap: 20px;
+  justify-content: safe center;
+  overflow-x: auto;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: calc(100% - 40px);
+}
+
+.activities > .cards > div {
+  background: #1C1C22;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  font-size: 14px;
+  height: 200px;
+  justify-content: space-around;
+  padding: 20px;
+  width: 300px;
+}
+
+.activities > .cards > div > div {
+  text-align: right;
+  width: 100%;
+}
+
+.activities > .cards > div > div > .bold {
+  font-weight: bold;
 }
 
 .skills {
   background: #1C1C22;
+  padding: 70px 0;
 }
 
-.skills > div > .heading {
+.skills > .heading {
+  margin-bottom: 70px;
   text-align: center;
 }
 
-.skills > div{
-  margin: 0 auto;
-  width: calc(100% - 250px);
-  text-align: center;
-}
-
-.skills > div > .column > div {
-  border-bottom: 1px solid #fff;
-  padding: 50px 5px;
-}
-
-.skills > div > .column > div:first-of-type {
-  border-top: 1px solid #fff;
-}
-
-.skills > div > .column > div > .row {
+.skills > .row {
+  border: 1px solid white;
+  border-left: 0;
+  border-right: 0;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px 0;
+  width: calc(100% - 100px)
+}
+
+.skills > .row > div {
+  flex: 1;
+}
+
+.skills > .row > .text > .subtitle {
+  color: #9CA3AF;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.skills > .row > .images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills > .row > .images > div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills > .row > .images > div > a > img {
+  width: 100px;
+}
+
+.skills > .row > .images > div > a:not(:hover) {
+  filter: grayscale(1);
+}
+
+.skills > .row:nth-child(3) {
+  border-top: 0;
+}
+
+.skills > .row:nth-child(3) > .text {
+  text-align: right;
 }
 
 .contact {
@@ -192,12 +289,13 @@ button {
 .contact > .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 96px;
   gap: 100px
 }
 
-.contact > .row > .column{
+.contact > .row > .column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,7 +310,7 @@ button {
   font-size: 12px;
 }
 
-.contact > .row > .column > img{
+.contact > .row > .column > img  {
   height: 56px;
 }
 

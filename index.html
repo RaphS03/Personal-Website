@@ -6,7 +6,7 @@
     <title>Raph's Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,100&family=Raleway:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,39 +19,41 @@
           <div>based in Melbourne.</div>
         </div>
         <div class="row">
-          <button onclick="location.href='#contact'" class="ovalButton">
+          <a class="ovalButton" href="#contact">
             GET IN TOUCH
             <img src="phone.svg">
-          </button>
-          <button class="ovalButton inverted">
+          </a>
+          <a class="ovalButton inverted" href="resume.pdf" target="_blank">
             VIEW RESUME
             <img src="arrow-down.svg">
-          </button>
+          </a>
         </div>
       </div>
       <img src="photo.jpg">
     </div>
     <div class="about">
       <div class="subHeading">A bit about me...</div>
-      <div>Now in my third year of a Software Engineering and Computer Science</div>
-      <div>double degree at Monash University, I've broadened my knowledge,</div>
-      <div>skills, and portfolio. I aim to further my development by collaborating on</div>
-      <div>real-world problems and enhancing my technical and interpersonal skills.</div>
-      <div>My interests include solution architecture, AI, and machine learning.</div>
+      <div class="text">
+        Now in my third year of a Software Engineering and Computer Science
+        double degree at Monash University, I've broadened my knowledge,
+        skills, and portfolio. I aim to further my development by collaborating on
+        real-world problems and enhancing my technical and interpersonal skills.
+        My interests include solution architecture, AI, and machine learning.
+      </div>
     </div>
     <div class="projects">
-      <div class="heading">Projects &amp; Courses</div>
+      <div class="heading">Projects</div>
       <div class="column">
         <div>
-          <div class="row">
+          <button class="toggleButton row">
             <div class="subHeading inverted">
               Stock Predictor
             </div>
-            <button class="light toggleButton">
+            <div class="light">
               <span class="toggled">+</span>
               <span class="toggled hidden">&ndash;</span>
-            </button>
-          </div>
+            </div>
+          </button>
           <div class="toggled hidden">
             <div class="badge">
               <div>January 2024</div>
@@ -67,15 +69,15 @@
           </div>
         </div>
         <div>
-          <div class="row">
+          <button class="toggleButton row">
             <div class="subHeading inverted">
               Backend Blockchain Development
             </div>
-            <button class="light toggleButton">
+            <div class="light">
               <span class="toggled">+</span>
               <span class="toggled hidden">&ndash;</span>
-            </button>
-          </div>
+            </div>
+          </button>
           <div class="toggled hidden">
             <div class="badge">
               <div>November-December 2023</div>
@@ -91,15 +93,15 @@
           </div>
         </div>
         <div>
-          <div class="row">
+          <button class="toggleButton row">
             <div class="subHeading inverted">
               Agile Project Management Website
             </div>
-            <button class="light toggleButton">
+            <div class="light">
               <span class="toggled">+</span>
               <span class="toggled hidden">&ndash;</span>
-            </button>
-          </div>
+            </div>
+          </button>
           <div class="toggled hidden">
             <div class="badge">
               <div>July-November 2023</div>
@@ -115,15 +117,15 @@
           </div>
         </div>
         <div>
-          <div class="row">
+          <button class="toggleButton row">
             <div class="subHeading inverted">
               AI Course with PyImageSearch
             </div>
-            <button class="light toggleButton">
+            <div class="light">
               <span class="toggled">+</span>
               <span class="toggled hidden">&ndash;</span>
-            </button>
-          </div>
+            </div>
+          </button>
           <div class="toggled hidden">
             <div class="badge">
               <div>November 2022 - February 2023</div>
@@ -139,15 +141,15 @@
           </div>
         </div>
         <div>
-          <div class="row">
+          <button class="toggleButton row">
             <div class="subHeading inverted">
-              Student Engineering Programs at Monash Univerity & RMIT
+              Student Engineering Programs
             </div>
-            <button class="light toggleButton">
+            <div class="light">
               <span class="toggled">+</span>
               <span class="toggled hidden">&ndash;</span>
-            </button>
-          </div>
+            </div>
+          </button>
           <div class="toggled hidden">
             <div class="badge">
               <div>January 2018</div>
@@ -164,34 +166,135 @@
         </div>
       </div>
     </div>
+    <div class="activities">
+      <div class="heading">Leadership</div>
+      <div class="cards">
+        <div class="light">
+          <ul>
+            <li>Helping students from ages 12-18 (including all VCE level maths)</li>
+            <li>Learned how to explain problems and solutions clearly to children of different abilities with different communication styles and requirements</li>
+          </ul>
+          <div>
+            <div class="bold">Math Tutor</div>
+            <div>March 2021 &ndash; Current</div>
+          </div>
+        </div>
+        <div class="light">
+          <ul>
+            <li>Worked as a bartender, waiter and front of house staff</li>
+            <li>Good customer service and how to take initiative</li>
+            <li>Developed my work ethic and commitment</li>
+          </ul>
+          <div>
+            <div class="bold">Staff at Showtime</div>
+            <div>August 2021 &ndash; June 2022</div>
+          </div>
+        </div>
+        <div class="light">
+          <ul>
+            <li>Helping students from ages 12-18</li>
+            <li>Learned how to explain problems and solutions clearly to children of different abilities</li>
+          </ul>
+          <div>
+            <div class="bold">Tennis Player & Captain</div>
+            <div>March 2021 &ndash; Current</div>
+          </div>
+        </div>
+        <div class="light">
+          <ul>
+            <li>Student Engineering Programs at Monash Univerity & RMIT</li>
+            <li>Completed 2 short multi-day programs that introduce students to engineering.</li>
+            <li>Developed my skills and love for problem-solving at an early age.</li>
+          </ul>
+          <div>
+            <div class="bold">Student Engineering Programs</div>
+            <div>January 2018</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="skills">
-      <div>
-        <div class="heading">What I do...</div>
-        <div class="column">
+      <div class="heading">What I do...</div>
+      <div class="row">
+        <div class="text">
+          <div class="subHeading">Programming</div>
+          <div class="subtitle">Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value.</div>
+        </div>
+        <div class="images">
           <div>
-            <div class="row">
-              <div> 
-                <div>Languages</div>
-                <div>...</div>
-                <div>...</div>
-              </div>
-              <div>
-                icons
-              </div>
-            </div>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
           </div>
           <div>
-            <div class="row">
-              <div>
-                icons
-              </div>
-              <div> 
-                <div>Tools</div>
-                <div>...</div>
-                <div>...</div>
-              </div>
-            </div>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
           </div>
+          <div>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="images">
+          <div>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+          </div>
+          <div>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+          </div>
+          <div>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+            <a href="https://example.com" target="_blank">
+              <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1f1c4d63-c5ae-4062-b615-b59ff688b890/d3fwi18-a3b901d8-9403-491c-924d-502aa2ecf4d8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFmMWM0ZDYzLWM1YWUtNDA2Mi1iNjE1LWI1OWZmNjg4Yjg5MFwvZDNmd2kxOC1hM2I5MDFkOC05NDAzLTQ5MWMtOTI0ZC01MDJhYTJlY2Y0ZDgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7MxE7FFfnHkcTMm3ThmG3ObSC1YrHUqnqs6gFTSbtss">
+            </a>
+          </div>
+        </div>
+        <div class="text">
+          <div class="subHeading">Tools</div>
+          <div class="subtitle">Here at flowbite we focus on markets where technology, innovation, and capital can unlock long-term value.</div>
         </div>
       </div>
     </div>
@@ -210,18 +313,18 @@
         <div class="column">
           <img src="linkedIn.svg">
           <div>Let's Connect</div>
-          <button class="ovalButton">
+          <a class="ovalButton" href="https://www.linkedin.com/in/raphaelschwalb" target="_blank">
             VISIT LINKEDIN
             <img src="arrow-right.svg">
-          </button>
+          </a>
         </div>
         <div class="column">
           <img src="github.svg">
           <div>Github</div>
-          <button class="ovalButton">
+          <a class="ovalButton" href="https://github.com/RaphS03" target="_blank">
             VISIT GITHUB
             <img src="arrow-right.svg">
-          </button>
+          </a>
         </div>
       </div>
     </div>
